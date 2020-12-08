@@ -19,7 +19,8 @@ const App = () => {
   // This state is the source of truth for the data inside the app. You won't be needing dummyData anymore.
   // To make the search bar work (which is stretch) we'd need another state to hold the search term.
   const [posts, setPosts] = useState(Data);
-  const [search, setSeacrh] = useState("");
+  const [search, setSearch] = useState("");
+
   const likePost = postId => {
     /*
       This function serves the purpose of increasing the number of likes by one, of the post with a given id.
@@ -45,7 +46,7 @@ const App = () => {
     }));
   };
 
-  function add(clone,post,comment){
+  const add = (clone,post,comment) => {
     clone.comments.push(
       {id: post.comments.length,
       username: "philzcoffee",
@@ -54,10 +55,16 @@ const App = () => {
       return clone.comments
   }
 
+  const searchFunction = (keyword) => {
+    setSearch(keyword);
+    search.length < 2 ? setPosts(Data) :
+    setPosts(posts.filter(post =>{return post.username.includes(search) }));
+  }
+
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
-      <SearchBar />
+      <SearchBar search={searchFunction}/>
       <Posts posts={posts} likePost={likePost} postComment={postComment}/>
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
