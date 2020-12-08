@@ -57,6 +57,7 @@ const App = () => {
 
   const searchFunction = (keyword) => {
     setSearch(keyword);
+    console.log(search)
     search.length < 2 ? setPosts(Data) :
     setPosts(posts.filter(post =>{return post.username.includes(search) }));
   }

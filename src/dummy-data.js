@@ -54,6 +54,66 @@ const dummyData = [
             },
         ],
     },
+    {
+        id: 3,
+        username: "corona",
+        thumbnailUrl: 'https://banner2.cleanpng.com/20180704/pal/kisspng-middle-east-respiratory-syndrome-coronavirus-indoo-controlled-molding-inc-5b3d87a9c1b2f3.8579488415307590817934.jpg',
+        imageUrl: 'https://banner2.cleanpng.com/20180704/pal/kisspng-middle-east-respiratory-syndrome-coronavirus-indoo-controlled-molding-inc-5b3d87a9c1b2f3.8579488415307590817934.jpg',
+        likes: 5000,
+        timestamp: "July 15th 2017, 03:12:09 pm",
+        comments: [
+            {
+                id: 36,
+                username: "twitch",
+                text: "Epic Street Fighter action here in Vegas!",
+            },
+            {
+                id: 37,
+                username: "michaelmarzetta",
+                text: "Omg that match was crazy",
+            },
+            {
+                id: 38,
+                username: "themexican_leprechaun",
+                text: "What a setup",
+            },
+            {
+                id: 39,
+                username: "dennis_futbol",
+                text: "It that injustice",
+            },
+        ],
+    },
+    {
+        id: 4,
+        username: "cristmas tree",
+        thumbnailUrl: 'https://banner2.cleanpng.com/20171128/5f7/decorated-christmas-tree-transparent-png-clip-art-image-5a1cfba22fabb1.5048363215118488661953.jpg',
+        imageUrl: 'https://banner2.cleanpng.com/20171128/5f7/decorated-christmas-tree-transparent-png-clip-art-image-5a1cfba22fabb1.5048363215118488661953.jpg',
+        likes: 3587,
+        timestamp: "Dec 15th 2020, 03:12:09 pm",
+        comments: [
+            {
+                id: 36,
+                username: "twitch",
+                text: "Epic Street Fighter action here in Vegas!",
+            },
+            {
+                id: 37,
+                username: "michaelmarzetta",
+                text: "Omg that match was crazy",
+            },
+            {
+                id: 38,
+                username: "themexican_leprechaun",
+                text: "What a setup",
+            },
+            {
+                id: 39,
+                username: "dennis_futbol",
+                text: "It that injustice",
+            },
+        ],
+    },
 ];
 
 export default dummyData;
